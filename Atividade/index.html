@@ -3,36 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <style>
-        html,
-        body {
-            font-size: 16px;
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .concluida {
-            color: red;
-            text-decoration: line-through;
-        }
-
-        .remove-btn {
-            background-color: blue;
-        }
-
-        .btn {
-            background-color: green;
-        }
-
-        .btn-texto {
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <input type="text" id="entradaTarefa" />
-    <button id="botaoAdicionarTarefa" class="btn">Ok</button>
-    <button id="removerTodas">Remover Todas</button>
+    <div class="botaoOk"><button id="botaoAdicionarTarefa" class="btn">Ok</button></div>
+    <div class="botaoTirar"><button id="removerTodas">Remover Todas</button></div>
     <ul id="listaTarefas"></ul>
     <script>
         // Seleciona os elementos do DOM
@@ -103,7 +80,7 @@
             tarefas = tarefas.filter((tarefa) => tarefa.texto !== textoTarefa); // Filtra a tarefa a ser removida
             localStorage.setItem("tarefas", JSON.stringify(tarefas)); // Atualiza localStorage
         }
-       
+
         // Função para atualizar o localStorage
         function atualizarLocalStorage() {
             const tarefas = [];

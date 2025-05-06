@@ -1,0 +1,63 @@
+body {
+    font-size: 16px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(229, 250, 250);
+}
+
+.concluida {
+    color: rgb(255, 100, 100);
+    text-decoration: line-through;
+}
+
+.botaoTirar {
+    text-align:center;
+    background-color: #f47e60;
+    color: white;
+    border: 5px solid #f47e60;
+    outline: none;
+    width: 10rem;
+    height: auto;
+    margin: 20rem 2rem, 2rem, 2rem;
+    text-decoration:none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.botaoOk{
+    margin:0,4rem,0,4rem;
+}
+
+#listaTarefas{
+    border: 1px solid #9e9e9e;
+    background-color: #eeeeee;
+    text-decoration:underline; 
+    text-decoration-color:#4089ff;
+    margin:3rem;
+    width: 30rem;
+}
+
+/*Quando passar por cima ele cresce*/
+.botaoTirar:hover {
+    transform: scale(1.1);
+}
+
+/*clareia o botão quando clicar */
+.botaoTirar:active {
+    filter: brightness(1.2);
+}
+
+
+.remove-btn {
+    background-color: rgb(223, 119, 91);
+
+}
+
+.btn {
+    background-color: green;
+}
+
+.btn-texto {
+    color: white;
+}
